@@ -1,0 +1,22 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: gateway-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring.cloud.gateway:
+      routes:
+        - id: MOVIE-MANAGEMENT-SERVICE
+          uri: lb://MOVIE-MANAGEMENT-SERVICE
+          predicates:
+            - Path=/api/moviemanagementservice/**
+        - id: MOVIE-SERVICE
+          uri: lb://http://localhost:8084
+          predicates:
+            - Path=/api/movieservice/**

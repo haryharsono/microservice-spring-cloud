@@ -27,7 +27,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/genres")
-// @Validated
+@Validated
 @Slf4j
 public class GenreController {
 

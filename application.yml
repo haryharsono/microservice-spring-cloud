@@ -1,4 +1,0 @@
-microservice-dev:
-  value: 10
-microservice-prod:
-  value: 10
