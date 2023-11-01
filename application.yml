@@ -1,8 +1,4 @@
-my:
-   greeting: hello world from config server
-   list:
-    values: one, two, three
-
-db:
-   host: 127.0.0.1
-   port: 1200
+microservice-dev:
+  value: 10
+microservice-prod:
+  value: 10
