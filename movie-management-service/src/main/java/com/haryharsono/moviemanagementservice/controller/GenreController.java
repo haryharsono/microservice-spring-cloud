@@ -41,6 +41,7 @@ public class GenreController {
 
     @GetMapping("/genre")
     public List<GenreDto> listGenre(){
+        log.info("call from movie-service");
         return genreServiceImpl.MovieList();
     }
     @GetMapping("/genre/{id}")

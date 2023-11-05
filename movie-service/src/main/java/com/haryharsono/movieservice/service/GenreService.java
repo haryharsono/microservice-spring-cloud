@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 /** MovieService */
 
-@FeignClient(name = "movie-management-service", url = "http://localhost:8080")
+@FeignClient(name = "movie-management-service", url = "http://localhost:9090/api/moviemanagementservice")
 public interface GenreService {
 
   @GetMapping("/genres/genre")
